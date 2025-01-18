@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafíos Matemáticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desafíos Matemáticos</h1>
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab="imc">IMC</button>
+            <button class="tab-button" data-tab="factorial">Factorial</button>
+            <button class="tab-button" data-tab="conversor">Conversor USD</button>
+            <button class="tab-button" data-tab="rectangular">Sala Rectangular</button>
+            <button class="tab-button" data-tab="circular">Sala Circular</button>
+            <button class="tab-button" data-tab="multiplicar">Tabla Multiplicar</button>
+        </div>
+
+        <div id="imc" class="tab-content active">
+            <h2>Calculadora de IMC</h2>
+            <div class="input-group">
+                <input type="number" id="peso" placeholder="Peso (kg)" step="0.1">
+                <input type="number" id="altura" placeholder="Altura (m)" step="0.01">
+                <button id="calcularIMC">Calcular</button>
+            </div>
+            <div id="resultadoIMC" class="resultado"></div>
+        </div>
+
+        <div id="factorial" class="tab-content">
+            <h2>Calculadora de Factorial</h2>
+            <div class="input-group">
+                <input type="number" id="numeroFactorial" placeholder="Número">
+                <button id="calcularFactorial">Calcular</button>
+            </div>
+            <div id="resultadoFactorial" class="resultado"></div>
+        </div>
+
+        <div id="conversor" class="tab-content">
+            <h2>Conversor de Dólares a Pesos</h2>
+            <div class="input-group">
+                <input type="number" id="dolares" placeholder="Cantidad USD" step="0.01">
+                <button id="convertirDolares">Convertir</button>
+            </div>
+            <div id="resultadoConversor" class="resultado"></div>
+        </div>
+
+        <div id="rectangular" class="tab-content">
+            <h2>Calculadora Sala Rectangular</h2>
+            <div class="input-group">
+                <input type="number" id="altura_rect" placeholder="Altura (m)" step="0.01">
+                <input type="number" id="anchura" placeholder="Anchura (m)" step="0.01">
+                <button id="calcularRectangular">Calcular</button>
+            </div>
+            <div id="resultadoRectangular" class="resultado"></div>
+        </div>
+
+        <div id="circular" class="tab-content">
+            <h2>Calculadora Sala Circular</h2>
+            <div class="input-group">
+                <input type="number" id="radio" placeholder="Radio (m)" step="0.01">
+                <button id="calcularCircular">Calcular</button>
+            </div>
+            <div id="resultadoCircular" class="resultado"></div>
+        </div>
+
+        <div id="multiplicar" class="tab-content">
+            <h2>Tabla de Multiplicar</h2>
+            <div class="input-group">
+                <input type="number" id="numeroTabla" placeholder="Número">
+                <button id="calcularTabla">Mostrar</button>
+            </div>
+            <div id="resultadoTabla" class="resultado"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
